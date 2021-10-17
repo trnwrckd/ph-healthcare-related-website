@@ -7,7 +7,7 @@ const Banner = () => {
             <h1>
                 We are here for you during covid times
             </h1>
-            <div><img src="https://i.ibb.co/1fbjFTR/banner.png" className="img-fluid" alt="" srcset="" /></div>
+            <div><img src="https://i.ibb.co/1fbjFTR/banner.png" className="img-fluid" alt=""/></div>
         </div>
     );
 };

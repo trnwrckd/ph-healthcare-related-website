@@ -1,36 +1,36 @@
 [
     {
-        "id" : 1 , 
+        "serviceID" : 1 , 
         "serviceName" : "Oxygen Cylinders for Rent",
         "image": "https://i.ibb.co/pf98kQC/oxygen.png",
         "description" : "We will provide oxygen cylinder at your home whenever needed."
     },
     {
-        "id" : 2 , 
+        "serviceID" : 2 , 
         "serviceName" : "At-home COVID test",
         "image": "https://i.ibb.co/TWbcYcg/covid-test.png",
         "description" : "We will go to your home to check if you have covid."
     },
     {
-        "id" : 3 , 
+        "serviceID" : 3 , 
         "serviceName" : "Medicine Home Delivery",
         "image": "https://i.ibb.co/dmgymtz/pharmacy.png",
         "description" : "Order online and recieve home delivery inside Chittagong, anywhere."
     },
     {
-        "id" : 4 , 
+        "serviceID" : 4 , 
         "serviceName" : "Ambulance Service",
         "image": "https://i.ibb.co/j8DM7XB/ambulance.png",
         "description" : "God forbid, but we got your back."
     },
     {
-        "id" : 5 , 
+        "serviceID" : 5 , 
         "serviceName" : "Home blood tests and CXR",
         "image": "https://i.ibb.co/23kxSdD/blood-test.png",
         "description" : "We will go to your home to conduct tests."
     },
     {
-        "id" : 6 , 
+        "serviceID" : 6 , 
         "serviceName" : "A 24/7 available help line",
         "image": "https://i.ibb.co/LRzZ2jr/helpline.png",
         "description" : "We answer your queries."

@@ -1,20 +1,27 @@
 import './Service.css';
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 const Service = (props) => {
-    const { serviceName, image, description } = props.service;
+    const { serviceID , serviceName, image, description } = props.service;
+    const history = useHistory();
+
+    const redirectToDetails = (serviceID) => {
+        const url = `/service/${serviceID}`;
+        history.push(url);
+    }
 
     return (
         <div className="d-flex">
             <div>
-                <img src={image} alt="" className= "img-fluid" height="200px" width="200px"/>
+                <img src={image} alt=""  height="200px" width="200px"/>
             </div>
             <div className="d-flex flex-column justify-content-center ps-5">
                 <p>{serviceName}</p>
                 <p>{description}</p>
             <div>
-                <button>
-                    view details
+                <button onClick={ ()=>{redirectToDetails(serviceID)}}>
+                    View Details
                 </button>
             </div>
             </div>
