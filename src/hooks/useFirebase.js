@@ -25,21 +25,29 @@ const useFireBase = () => {
             }).finally(() => setIsLoading(false));
     }
 
+    // update username when signed in with email and pass
+    const updateName = (name, history, redirectURL) => {
+        setIsLoading(true);
+        updateProfile(auth.currentUser, { displayName: name })
+            .then(result => {
+            history.push(redirectURL);
+            setIsLoading(false);
+            console.log('updated');
+        })
+    }
+
     // register with email and pass
     const emailRegister = (name, email, password, redirectURL, history) => {
-        const update = updateProfile();
+
         createUserWithEmailAndPassword(auth, email, password)
         .then((result) => {
             setUser(result.user);
-            update.displayName = name;
+            updateName(name , history , redirectURL);
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
             console.log(errorMessage);
-        }).finally(() => {
-            history.push(redirectURL);
-            setIsLoading(false)
         });
     }
     
@@ -68,27 +76,27 @@ const useFireBase = () => {
             () => {
                 setUser({});
             }
-        )
-    }
-
-    // set user state
-    useEffect(() => {
-        const userState = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                setUser(user);
-            }
-            else {
-                setUser({});
-            }
-            setIsLoading(false);
-        });
-        return userState;
-    },[auth])
-    
-
-    return {
-        user, googleSignin , emailSignIn, emailRegister,  isLoading , logOut
-    }
+            )
+        }
+        
+        // set user state
+        useEffect(() => {
+            const userState = onAuthStateChanged(auth, (user) => {
+                if (user) {
+                    setUser(user);
+                }
+                else {
+                    setUser({});
+                }
+                setIsLoading(false);
+            });
+            return userState;
+        },[auth])
+        
+        
+        return {
+            user, googleSignin , emailSignIn, emailRegister,  isLoading , logOut
+        }
 }
 
 export default useFireBase;

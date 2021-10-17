@@ -1,7 +1,14 @@
+.custom-nav{
+    font-size: 1.5rem;
+    /* height: 90px; */
+    /* margin-bottom: 90px; */
+    /* background-color: rgba(10, 10, 10, 0.699); */
+}
 .active{
-    font-size: 1.2rem;
-    color: navy;
+    font-size: 2rem !important;
+    color: rgb(109, 116, 7);
 }
 .common{
     margin: 0px 10px;
+    text-decoration: none;
 }
