@@ -1,0 +1,12 @@
+.background{
+    background-color: bisque;
+    min-height: 80vh;
+    margin: 30px 0px;
+}
+
+.redirect{
+    padding: 5px 0;
+    color: navy;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
