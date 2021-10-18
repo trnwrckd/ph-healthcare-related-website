@@ -20,8 +20,8 @@ const Shop = () => {
     return (
         <div>
             <ul className = 'sub-nav'>
-                <li onClick={(e)=>{handleClick(e.target.innerText)}}>medicine</li>
                 <li onClick={(e)=>{handleClick(e.target.innerText)}}>products</li>
+                <li onClick={(e)=>{handleClick(e.target.innerText)}}>medicine</li>
             </ul>
             {
                 component ? <Medicine/> : <Products/>

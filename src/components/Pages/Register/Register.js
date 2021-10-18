@@ -8,7 +8,6 @@ const Register = () => {
     const { handleSubmit, register, formState: { errors } } = useForm();
     const redirectURL = '/';
     const history = useHistory();
-    
     const { googleSignin , emailRegister} = useAuth();
     
     const onSubmit = (data) => {
@@ -20,10 +19,13 @@ const Register = () => {
         history.push('/login');
     }
     return (
-        <div className="background">
-            <div className="container d-flex flex-column align-items-center">
-                <h1>Register</h1>
-                <div>
+        <div className="register-bg py-5">
+            <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
+
+                <div><img src="./images/register.png" alt="" className="img-fluid" height="400px" width="400px"/></div>
+
+                <div className="d-flex flex-column bg-light px-3 rounded">
+                    <h1>Register</h1>
                     <form onSubmit={handleSubmit(onSubmit)} className="form-group">
                         <div className="form-floating mb-2">
                             <input className="form-control px-5" type="text" placeholder="Name" id="name" {...register("name", { required: "This is required" })} />
@@ -45,9 +47,12 @@ const Register = () => {
                     <div className="mt-3">
                         <button className="btn btn-danger" onClick={googleSignin}>Register using Google</button>
                     </div>
+
+                    <p className="redirect pt-3" onClick={redirectToLogin}>Already have an account?</p>
+
                 </div>
             </div>
-            <p className="redirect" onClick={redirectToLogin}>Already have an account?</p>
+            
 
         </div>
     );

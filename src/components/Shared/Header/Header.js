@@ -7,10 +7,11 @@ const Header = () => {
 
     return (
         <div className="custom-nav">
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <div className="container-fluid">
+            <nav className="navbar navbar-expand-lg navbar-light">
+                <div className="container-fluid px-3">
                     <a className="navbar-brand" href="#">
-                        <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"></img>
+                        <img src="./favicon.ico" alt="" width="30" height="30"></img>
+                        <span className="logo-text">CovidSupport</span>
                     </a>
 
                     <div>
@@ -33,7 +34,7 @@ const Header = () => {
                                 <NavLink to="/login"  className="common" activeClassName="active">Login</NavLink>
                                 </li>
                                 <li className = "nav-item">
-                                    {!isLoading && <span>{user.displayName}</span>}
+                                    {!isLoading && <span className="fs-6 me-2">{user.displayName}</span>}
                                 </li>
                                 <li className = "nav-item">{user.email && <button className='btn btn-danger' onClick={logOut}>Logout</button>}</li>
                             </ul>

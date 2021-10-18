@@ -20,7 +20,7 @@ const Contact = () => {
 					submit
 				</button>
 			</div>
-			<div><img src="./images/contact.png" alt="" height="500px" width="500px" /></div>
+			<div><img src="./images/contact.png" alt="" className="contact-img img-fluid" /></div>
 			</div>
 		</div>
 	);

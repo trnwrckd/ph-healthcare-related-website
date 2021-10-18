@@ -32,7 +32,6 @@ const useFireBase = () => {
             .then(result => {
             history.push(redirectURL);
             setIsLoading(false);
-            console.log('updated');
         })
     }
 
