@@ -2,7 +2,7 @@ import './SingleProduct.css';
 import React from 'react';
 
 const SingleProduct = (props) => {
-    const { productID, productName, productImage, originalPrice, discountPrice, sold, stock } = props.product;
+    const {productName, productImage, originalPrice, discountPrice, sold, stock } = props.product;
     return (
         <div>
             <img src={productImage} alt="" />

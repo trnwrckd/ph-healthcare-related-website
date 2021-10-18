@@ -8,6 +8,7 @@ const Register = () => {
     const { handleSubmit, register, formState: { errors } } = useForm();
     const redirectURL = '/';
     const history = useHistory();
+    
     const { googleSignin , emailRegister} = useAuth();
     
     const onSubmit = (data) => {
