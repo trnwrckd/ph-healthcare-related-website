@@ -1,0 +1,14 @@
+.sub-nav{
+    list-style: none;
+}
+.sub-nav li{
+    display: inline;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0px 20px ;
+    padding: 5px 10px ;
+    cursor: pointer;
+}
+.sub-nav li:hover{
+    background-color: brown;
+}

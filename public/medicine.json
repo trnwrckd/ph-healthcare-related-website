@@ -1,0 +1,66 @@
+[
+    {
+        "medID": 1, 
+        "medName" : "Osartil 50 mg",
+        "chemicalName" : "Losartan Potassium",
+        "pharma": "Incepta Pharmaceuticals Ltd.",
+        "stripPrice" : 70,
+        "packPrice" : 500 
+    },
+    {
+        "medID": 1, 
+        "medName" : "Pulfibro 267 mg",
+        "chemicalName" : "Pirfenidone",
+        "pharma": "UniMed UniHealth",
+        "stripPrice" : 500,
+        "packPrice" : 1500 
+    },
+    {
+        "medID": 3, 
+        "medName" : "Mucomist DT 600 mg",
+        "chemicalName" : "Acetylcysteine",
+        "pharma": "Beximco Pharmaceuticals Ltd. ",
+        "stripPrice" : 150,
+        "packPrice" : 350 
+    },
+    {
+        "medID": 4, 
+        "medName" : "Zimax 500 mg",
+        "chemicalName" : "Azithromycin Dihydrate",
+        "pharma": "Square Pharmaceuticals Ltd.",
+        "stripPrice" : 320,
+        "packPrice" : 640 
+    },
+    {
+        "medID": 5, 
+        "medName" : "Xinc 20 mg",
+        "chemicalName" : "Zinc Sulfate Monohydrate",
+        "pharma": "Eskayef Pharmaceuticals Ltd. ",
+        "stripPrice" : 20,
+        "packPrice" : 260 
+    },
+    {
+        "medID": 6, 
+        "medName" : "Napa Extend",
+        "chemicalName" : "Paracetamol",
+        "pharma": "Beximco Pharmaceuticals Ltd. ",
+        "stripPrice" : 30,
+        "packPrice" : 300 
+    },
+    {
+        "medID": 7, 
+        "medName" : "Fexo 120 mg",
+        "chemicalName" : "Fexofenadine Hydrochloride ",
+        "pharma": "Square Pharmaceuticals Ltd.",
+        "stripPrice" : 120,
+        "packPrice" : 360 
+    },
+    {
+        "medID": 8, 
+        "medName" : "D-Rise 40000 U",
+        "chemicalName" : "Colecalciferol [Vitamin D3]",
+        "pharma": "Beximco Pharmaceuticals Ltd. ",
+        "stripPrice" : 350,
+        "packPrice" : 1750 
+    }
+]

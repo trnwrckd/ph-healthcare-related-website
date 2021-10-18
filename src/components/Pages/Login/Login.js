@@ -1,8 +1,8 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import './Login.css';
-import { useAuth } from '../../hooks/useAuth';
 import {useHistory , useLocation } from 'react-router-dom';
+import { useAuth } from '../../../hooks/useAuth';
 
 const Login = () => {
     const history = useHistory();

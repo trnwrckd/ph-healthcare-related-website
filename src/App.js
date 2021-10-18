@@ -1,15 +1,16 @@
 import { BrowserRouter as Router , Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './components/Shared/Header/Header';
-import Home from './components/Home/Home';
-import Login from './components/Login/Login';
-import NotFound from './components/NotFound/NotFound';
+import Home from './components/Pages/Home/Home';
+import NotFound from './components/Pages/NotFound/NotFound';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import Register from './components/Register/Register';
 import Secret from './components/Secret/Secret';
 import AuthProvider from './context/AuthProvider';
 import Footer from './components/Shared/Footer/Footer';
 import ServiceDetails from './components/Pages/Services/Service/ServiceDetails/ServiceDetails';
+import Login from './components/Pages/Login/Login';
+import Register from './components/Pages/Register/Register';
+import Shop from './components/Pages/Shop/Shop';
 
 function App() {
   return (
@@ -33,9 +34,9 @@ function App() {
             <Route path='/register'>
               <Register></Register>
             </Route>
-            <PrivateRoute path='/secret'>
-              <Secret></Secret>
-            </PrivateRoute>
+            <Route path = '/shop'>
+              <Shop></Shop>
+            </Route>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
