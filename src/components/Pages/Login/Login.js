@@ -28,7 +28,7 @@ const Login = () => {
     return (
         <div className="login-bg py-5 mt-nav">
             <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
-                <div className="d-flex flex-column justify-content-center bg-light rounded px-3 py-4">
+                <div className="d-flex flex-column justify-content-center login px-3 py-4">
                     <h1>Login</h1>
                     <div>
                         <form onSubmit={handleSubmit(onSubmit)} className="form-group">
@@ -43,13 +43,13 @@ const Login = () => {
                                 {errors.password && <p className="text-danger fw-bold m-0"> {errors.password.message}</p>}
                             </div>
                             {error && <p className="text-danger fw-bold">{error}</p>}
-                            <div><button className="btn btn-success">Login</button></div>
+                            <div><button className="btn-generic">Login</button></div>
                         </form>
                         <div className="mt-3">
-                            <button className="btn btn-danger" onClick={handleGoogleSignin}>Login using Google</button>
+                            <button className="btn-generic" onClick={handleGoogleSignin}>Login using Google</button>
                         </div>
                     </div>
-                    <p className="redirect pt-3" onClick={redirectToRegister}>Don't have an account?</p>
+                    <p className="redirect pt-3 text-danger" onClick={redirectToRegister}>Don't have an account?</p>
                 </div>
 
                 <div>

@@ -25,7 +25,7 @@ const Register = () => {
 
                 <div><img src="./images/register.png" alt="" className="img-fluid" height="400px" width="400px"/></div>
 
-                <div className="d-flex flex-column bg-light px-3 py-4 rounded">
+                <div className="d-flex flex-column register px-3 py-4">
                     <h1>Register</h1>
                     <form onSubmit={handleSubmit(onSubmit)} className="form-group">
                         <div className="form-floating mb-2">
@@ -44,13 +44,13 @@ const Register = () => {
                             {errors.password && <p class="text-danger fw-bold m-0">{errors.password.message}</p>}
                         </div>
                         {error && <p className="text-danger fw-bold">{error}</p>}
-                        <div><button className="btn btn-success">Register</button></div>
+                        <div><button className="btn-generic">Register</button></div>
                     </form>
                     <div className="mt-3">
-                        <button className="btn btn-danger" onClick={googleSignin}>Register using Google</button>
+                        <button className="btn-generic" onClick={googleSignin}>Register using Google</button>
                     </div>
 
-                    <p className="redirect pt-3" onClick={redirectToLogin}>Already have an account?</p>
+                    <p className="redirect pt-3 text-danger" onClick={redirectToLogin}>Already have an account?</p>
 
                 </div>
             </div>

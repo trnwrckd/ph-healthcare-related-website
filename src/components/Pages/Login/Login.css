@@ -3,6 +3,11 @@
     min-height: 80vh;
 }
 
+.login{
+    background-color: white;
+    border-radius: 10px;
+}
+
 .redirect{
     color: navy;
     cursor: pointer;
