@@ -21,13 +21,13 @@ const SingleMed = (props) => {
                     <p>{pharma}</p>
                     <div className="text-start d-flex justify-content-between align-items-center mt-2">
                         <div className="price-info">
-                            <p><span className="fs-5 fw-bold">{stripPrice}  BDT </span>per Strip</p>
-                            <p><span className="fs-5 fw-bold">{packPrice}  BDT </span>per Box</p>
+                            <p className="price"><span className="fs-5 fw-bold">{stripPrice}  BDT </span>per Strip</p>
+                            <p className="price"><span className="fs-5 fw-bold">{packPrice}  BDT </span>per Box</p>
                         </div>
-                        <div class="ms-2">
+                        <div className="ms-2">
                             <button className="btn-generic btn-blue">
                                 <small>
-                                    Buy Now<i class="fas fa-cart-plus"></i>
+                                    Buy Now<i className="fas fa-cart-plus"></i>
                                 </small>
                             </button>
                         </div>

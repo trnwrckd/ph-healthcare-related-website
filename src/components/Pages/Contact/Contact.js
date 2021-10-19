@@ -11,7 +11,7 @@ const Contact = () => {
 					We love to hear your opinions,<br /> because that is the only way we can ever improve. 
 				</p>
 				<button className= "btn-generic btn-blue">
-					Make a Donation <i class="fas fa-hand-holding-usd ms-1"></i>
+					Make a Donation <i className="fas fa-hand-holding-usd ms-1"></i>
 				</button>
 			</div>
 			<div className="d-flex flex-column flex-column-reverse flex-lg-row align-items-center mt-3 mt-lg-0">
@@ -22,7 +22,7 @@ const Contact = () => {
 						<label htmlFor="floatingTextarea">Write your Email..</label>
 					</div>
 					<button className="w-100 mt-3 btn-generic btn-red">
-						Send <i class="fas fa-envelope-square ms-1"></i>
+						Send <i className="fas fa-envelope-square ms-1"></i>
 					</button>
 				</div>
 			</div>

@@ -8,7 +8,7 @@ export const useServices = () => {
         fetch(url)
             .then(result => result.json())
             .then(data => setServices(data))
-    }, []);
+    }, [url]);
 
     return [services, setServices];
 

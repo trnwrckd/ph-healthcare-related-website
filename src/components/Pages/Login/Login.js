@@ -45,18 +45,18 @@ const Login = () => {
                             {error && !errors.password && !errors.email && <p className="text-danger fw-bold">{error}</p>}
                             <div><button className="btn-generic  btn-blue">
                                     Login
-                                    <i class="fas fa-sign-in-alt ms-1"></i>
+                                    <i className="fas fa-sign-in-alt ms-1"></i>
                                 </button>
                             </div>
                         </form>
                         <div className="mt-3">
                             <button className="btn-generic btn-red" onClick={handleGoogleSignin}>
-                                <i class="fab fa-google me-1"></i>
+                                <i className="fab fa-google me-1"></i>
                                 Login with Google  
                             </button>
                         </div>
                     </div>
-                    <p className="redirect pt-3 text-danger" onClick={redirectToRegister}>Don't have an account?</p>
+                    <p className="redirect pt-3" onClick={redirectToRegister}>Don't have an account?</p>
                 </div>
 
                 <div>
