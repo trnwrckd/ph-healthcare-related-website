@@ -1,8 +1,7 @@
 @import url("~leaflet/dist/leaflet.css");
 
 .about{
-    background-color: rgb(255, 236, 196);
-    background-color: #e9daff;
+    background-color: #e6ffe6;
 }
 
 .leaflet-container {

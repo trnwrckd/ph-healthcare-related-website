@@ -17,7 +17,7 @@ const SingleProduct = (props) => {
                         <p className="mb-2">{sold} Already sold</p>
                         <p className="mb-2">Only {stock} left in stock!</p>
                     </div>
-                    <button className="btn-generic">Buy Now</button>
+                    <button className="btn-generic btn-red">Buy Now <i class="fas fa-cart-plus ms-1"></i></button>
                 </div>
             </div>
         </div>

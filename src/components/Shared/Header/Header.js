@@ -12,7 +12,7 @@ const Header = () => {
                     
                     <a className="navbar-brand" href="https://react-firebase-authentic-c6866.web.app/">
                         <img src="./images/navlogo.webp" alt="" width="30" height="30"></img>
-                        <span className="logo-text">CovidSupport</span>
+                        <span className="logo-text">CovidSupport™</span>
                     </a>
 
                     <button className="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,9 @@ const Header = () => {
                             <li className = "nav-item">
                             {
                                 user.email ?
-                                    <button className='btn btn-danger' onClick={logOut}>Logout</button>
+                                        <button className='btn-logout' onClick={logOut}>Logout
+                                            <i class="fas fa-sign-out-alt ms-1"></i>
+                                        </button>
                                 : <NavLink to="/login" className="common" activeClassName="active">Login</NavLink>
                             }
                             </li>

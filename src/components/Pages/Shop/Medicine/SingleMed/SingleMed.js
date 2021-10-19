@@ -24,8 +24,12 @@ const SingleMed = (props) => {
                             <p><span className="fs-5 fw-bold">{stripPrice}  BDT </span>per Strip</p>
                             <p><span className="fs-5 fw-bold">{packPrice}  BDT </span>per Box</p>
                         </div>
-                        <div>
-                            <button className="btn-generic">Buy Now</button>
+                        <div class="ms-2">
+                            <button className="btn-generic btn-blue">
+                                <small>
+                                    Buy Now<i class="fas fa-cart-plus"></i>
+                                </small>
+                            </button>
                         </div>
                     </div>
                 </div>   

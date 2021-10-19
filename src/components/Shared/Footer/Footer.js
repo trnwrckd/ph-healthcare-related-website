@@ -30,7 +30,7 @@ const Footer = () => {
                                 <i className="fab fa-instagram"></i>
                                 <i className="fab fa-youtube"></i>
                             </div>
-                            <p><small>© 2021 CovidSupport. All rights reserved.</small></p>
+                            <p><small>© 2021 CovidSupport™. All rights reserved.</small></p>
                         </div>  
                     </div>
                 </div>

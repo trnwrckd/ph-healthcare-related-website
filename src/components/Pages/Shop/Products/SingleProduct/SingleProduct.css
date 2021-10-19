@@ -6,6 +6,6 @@
 }
 
 .product-card:hover{
-    box-shadow: 0px 0px 10px lightgrey;
-    background-color: #ffebd4;
+    box-shadow: 0px 0px 10px rgb(197, 196, 196);
+    background-color: #fff2e3;
 }

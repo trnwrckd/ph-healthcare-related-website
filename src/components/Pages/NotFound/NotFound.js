@@ -20,6 +20,7 @@ const NotFound = () => {
             <div>
                 <button className="btn-generic" onClick={redirectToHome}>
                     Go to Home
+                    <i class="fas fa-home ms-1"></i>
                 </button>
             </div>
         </div>

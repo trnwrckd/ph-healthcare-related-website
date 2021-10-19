@@ -3,7 +3,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 const Service = (props) => {
-    const { serviceID , serviceName, image, description } = props.service;
+    const { serviceID , serviceName, image, shortDesc } = props.service;
     const history = useHistory();
 
     const redirectToDetails = (serviceID) => {
@@ -19,9 +19,9 @@ const Service = (props) => {
                 </div>
                 <div className="d-flex flex-column justify-content-center ps-4">
                     <h4>{serviceName}</h4>
-                    <p className="mt-2 mb-4">{description}</p>
+                    <p className="mt-2 mb-4">{shortDesc}</p>
                 <div>
-                    <button className="btn-generic bg-light" onClick={ ()=>{redirectToDetails(serviceID)}}>
+                    <button className="btn-generic btn-blue" onClick={ ()=>{redirectToDetails(serviceID)}}>
                         View Details
                     </button>
                 </div>

@@ -22,9 +22,9 @@
     text-decoration: none;
 }
 .active{
-    /* font-size: 2rem; */
     color: rgb(0, 0, 0);
-    background-color: #d9fff9;
+    color: white;
+    background-color: #9CADAB;
 }
 a{
     color: black;

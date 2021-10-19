@@ -28,7 +28,7 @@ const About = () => {
                             <br />
                             We wish to bring the whole system up online so we can all fight hand in hand together against COVID-19, the global pandemic of our lifetime. 
                         </p>
-                        <button className="btn-generic">Sign Up as a Volunteer</button>
+                        <button className="btn-generic btn-blue">Sign Up as a Volunteer</button>
                     </div>
                     <div className="mt-3 mt-lg-0">
                         <MapContainer center={coordinate} zoom={16} scrollWheelZoom={true}>

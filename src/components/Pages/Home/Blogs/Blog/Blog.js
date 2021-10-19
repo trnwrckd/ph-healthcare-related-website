@@ -13,13 +13,13 @@ const Blog = (props) => {
             </div>
             <div className="px-3 px-lg-2 pt-3">
                 <h4>{title}</h4>
-                <div className="d-flex justify-content-around">
+                <div className="d-flex justify-content-around align-items-center">
                     <p>{date}</p>
-                    <p> By {author}</p>
+                    <p> By <span className="text-danger fs-5">{author}</span></p>
                 </div>
                 <p>{details}</p>
             </div>
-            <div><button className = "btn-generic"> Read More</button></div>
+            <div><button className = "btn-generic btn-red"> Read More</button></div>
         </div>
     );
 };

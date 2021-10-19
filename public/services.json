@@ -3,37 +3,43 @@
         "serviceID" : 1 , 
         "serviceName" : "Oxygen Cylinders for Rent",
         "image": "https://i.ibb.co/pf98kQC/oxygen.png",
-        "description" : "We will provide oxygen cylinder at your home whenever needed."
+        "shortDesc" : "We will provide oxygen cylinder at your home whenever needed.",
+        "description" : "We have Oxygen Cylinders that you can rent. Home delivery is available inside Chittagong city. You can return the cylinder and get a new one when it's expired."
     },
     {
         "serviceID" : 2 , 
         "serviceName" : "At-home COVID test",
         "image": "https://i.ibb.co/TWbcYcg/covid-test.png",
-        "description" : "We will go to your home to check if you have covid."
+        "shortDesc" : "We will go to your home to conduct COVID test.",
+        "description" : "Our expert team will go to your home and collect sample. Results will be made available within the shortest time possible."
     },
     {
         "serviceID" : 3 , 
         "serviceName" : "Medicine Home Delivery",
         "image": "https://i.ibb.co/dmgymtz/pharmacy.png",
-        "description" : "Order online and recieve home delivery inside Chittagong, anywhere."
+        "shortDesc" : "Order online and recieve home delivery inside Chittagong, anywhere.",
+        "description" : "We have a large collection of drugs and other pharmaceuticals, which you can order online to get a free home delivery anywhere inside Chittagong."
     },
     {
         "serviceID" : 4 , 
         "serviceName" : "Ambulance Service",
         "image": "https://i.ibb.co/j8DM7XB/ambulance.png",
-        "description" : "God forbid, but we got your back."
+        "shortDesc" : "ICU or non ICU ambulances available all throughout Chittagong",
+        "description" : "You can book an ambulance online if needed. We have both the usual and the ICU ambulances available. Our team will provide transportation from your home to hospitals."
     },
     {
         "serviceID" : 5 , 
         "serviceName" : "Home blood tests and CXR",
         "image": "https://i.ibb.co/23kxSdD/blood-test.png",
-        "description" : "We will go to your home to conduct tests."
+        "shortDesc" : "We will go to your home to conduct various tests",
+        "description" : "Various blood tests like CBC, Serum Creatinine , Serum Bilirubin are available. Our team will collect samples from your home and deliver results online. Portable CXR Machines are also available."
     },
     {
         "serviceID" : 6 , 
         "serviceName" : "A 24/7 available help line",
         "image": "https://i.ibb.co/LRzZ2jr/helpline.png",
-        "description" : "We answer your queries."
+        "shortDesc" : "Our team is alwaye there for all your COVID related queries",
+        "description" : "Any COVID related queries that you have, you can call our 24/7 helpline at 16266. Our support team will try their best to assist you."
     }
 ]
 
