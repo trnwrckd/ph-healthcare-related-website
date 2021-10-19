@@ -47,7 +47,7 @@ const Sponsors = () => {
 
 
     return (
-        <div className="container-fluid sponsors py-5" data-aos="fade-left" data-aos-duration="1000">
+        <div className="container-fluid sponsors py-5">
             <div className="container">
                 <h1 > Our Sponsors</h1>
                 <Slider {...slickSettings} className="pt-4 mt-3">

@@ -16,7 +16,7 @@ const About = () => {
     const coordinate = { lat: 22.3639, lng: 91.84071 };
 
     return (
-        <div className="container-fluid about" data-aos="fade-right" data-aos-duration="1000">
+        <div className="container-fluid about">
             <div className="container py-5">
                 <div className="row row-cols-1 row-cols-md-2 py-3">
                     <div>
