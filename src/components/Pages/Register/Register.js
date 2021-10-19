@@ -15,7 +15,11 @@ const Register = () => {
         const { name, email, password } = data;
         emailRegister(name, email , password , redirectURL , history)
     }
-    
+
+    const handleGoogleSignin = () => {
+        googleSignin(redirectURL , history);
+    }
+
     const redirectToLogin = () => {
         history.push('/login');
     }
@@ -29,21 +33,24 @@ const Register = () => {
                     <h1>Register</h1>
                     <form onSubmit={handleSubmit(onSubmit)} className="form-group">
                         <div className="form-floating mb-2">
-                            <input className="form-control px-5" type="text" placeholder="Name" id="name" {...register("name", { required: "This is required" })} />
+                            <input className="form-control px-5" type="text" placeholder="Name" id="name" {...register("name", { required: "Name is required" })} />
                             <label htmlFor="name">Name</label>
                             {errors.name && <p class="text-danger fw-bold m-0">{errors.name.message}</p>}
                         </div>
                         <div className="form-floating mb-2">
-                            <input className="form-control px-5" type="email" placeholder="Email" id="email" {...register("email", { required: "This is required" })} />
+                            <input className="form-control px-5" type="email" placeholder="Email" id="email" {...register("email", { required: "Email is required" })} />
                             <label htmlFor="email">Email</label>
                             {errors.email && <p class="text-danger fw-bold m-0">{errors.email.message}</p>}
                         </div>
                         <div className="form-floating mb-2">
-                            <input className="form-control px-5" type="password" placeholder="Password" id="email" {...register("password", { required: "This is required" , minLength:{value:6 , message:"Password must be atleast 6 characters"}})} />
+                            <input className="form-control px-5" type="password" placeholder="Password" id="email" {...register("password", { required: "Password is required" , minLength:{value:6 , message:"Password must be atleast 6 characters"}})} />
                             <label htmlFor="email">Password</label>
                             {errors.password && <p class="text-danger fw-bold m-0">{errors.password.message}</p>}
                         </div>
-                        {error && <p className="text-danger fw-bold">{error}</p>}
+                        {
+                            error && !errors.password && !errors.email && !errors.name &&
+                                <p className="text-danger fw-bold">{error}</p>
+                        }
                         <div>
                             <button className="btn-generic btn-red">
                                 Register <i class="fas fa-sign-in-alt ms-1"></i>
@@ -51,7 +58,7 @@ const Register = () => {
                         </div>
                     </form>
                     <div className="mt-3">
-                        <button className="btn-generic btn-blue" onClick={googleSignin}>
+                        <button className="btn-generic btn-blue" onClick={handleGoogleSignin}>
                             <i class="fab fa-google me-1"></i>
                             Register with Google
                         </button>

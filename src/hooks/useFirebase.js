@@ -45,7 +45,6 @@ const useFireBase = () => {
             updateName(name , history , redirectURL);
         })
         .catch((error) => {
-            const errorCode = error.code;
             const errorMessage = error.message;
             setError(errorMessage);
         });
@@ -61,7 +60,6 @@ const useFireBase = () => {
             history.push(redirectURL);
         })
         .catch((error) => {
-            const errorCode = error.code;
             const errorMessage = error.message;
             setError(errorMessage);
         }).finally(() => {
