@@ -1,17 +1,68 @@
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './Sponsors.css';
 
 import React from 'react';
 
 const Sponsors = () => {
+
+    const slickSettings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
+    };
+
+
     return (
-        <div className="container-fluid bg-dark">
-            <h1 className="text-light"> Our Sponsors</h1>
-            <div className="container py-3">
-                <div className = "row row-cols-2 row-cols-md-4">
-                    <div className="col"><img src="./images/sponsors/chevron.png" alt="" /></div>
-                    <div className="col"><img src="./images/sponsors/square.png" alt=""  /></div>
-                    <div className="col"><img src="./images/sponsors/icddrb.png" alt=""  /></div>            
-                    <div className="col"><img src="./images/sponsors/incepta.png" alt="" /></div>            
+        <div className="container-fluid sponsors py-5">
+            <div className="container">
+                <h1 > Our Sponsors</h1>
+                <Slider {...slickSettings} className="pt-4">
+                        <div className="d-flex justify-content-center"><img src="./images/sponsors/chevron.png" alt="" height="250px" /></div>
+                        <div className="d-flex justify-content-center"><img src="./images/sponsors/square.png" alt=""  height="250px" /></div>
+                        <div className="d-flex justify-content-center"><img src="./images/sponsors/icddrb.png" alt=""  height="250px" /></div>            
+                        <div className="d-flex justify-content-center"><img src="./images/sponsors/incepta.png" alt="" height="250px" /></div> 
+                </Slider>
+            </div>
+
+
+
+            <div className="container py-3 pt-5 ">
+                <div className = "row row-cols-1 row-cols-md-4">
+                               
                 </div>
             </div>
         </div>

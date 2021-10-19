@@ -8,10 +8,10 @@ const Services = () => {
     const [services] = useServices();
     
     return (
-        <div className="mt-3">
+        <div className="my-5">
             <h1 className="mb-4">Our services</h1>
-            <div className="container">
-                <div className="row row-cols-1 row-cols-lg-2 g-5">
+            <div className="container-fluid px-5">
+                <div className="row row-cols-1 row-cols-md-2 g-5">
                     {
                         services.map(service =><Service key={service.serviceID} service={service}/>)
                     }        

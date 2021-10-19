@@ -1,11 +1,15 @@
 @import url("~leaflet/dist/leaflet.css");
 
 .about{
-    background-color: bisque;
+    background-color: rgb(255, 236, 196);
+    background-color: #e9daff;
 }
 
 .leaflet-container {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   border-radius: 15px;
+}
+.leaflet-container:hover {
+  box-shadow: 0px 0px 8px gray;
 }

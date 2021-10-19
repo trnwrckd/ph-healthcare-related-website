@@ -1,0 +1,6 @@
+.service-details{
+    min-height: 90vh;
+    background-color: rgb(235, 213, 255);
+    display: flex;
+    align-items: center;
+}

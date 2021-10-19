@@ -1,11 +1,16 @@
 .custom-nav{
     font-size: 1.5rem;
-    background: linear-gradient(45deg , rgb(210, 205, 255) , rgb(255, 255, 176) ,rgb(196, 255, 211));
+    background: linear-gradient(45deg , rgb(255, 246, 205) , rgb(255, 255, 176) ,rgb(196, 255, 211));
+    background: #fafafa;
+    margin-bottom: 65px;
 }
 .logo-text{
     font-size: 1.75rem;
     margin-left: 10px;
     font-weight: 500;
+}
+.navbar-collapse {
+   padding-left:0;
 }
 .common{
     margin: 0px 10px;
@@ -15,12 +20,12 @@
 }
 .active{
     font-size: 2rem;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.37);
+    color: rgb(63, 63, 63);
+    background-color: #d9fff9;
 }
 a{
     color: black;
 }
 a:hover{
-    color: red;
+    color: #37746a;
 }

@@ -12,12 +12,14 @@ const Blogs = () => {
     },[])
 
     return (
-        <div className="container">
-            <h1>Healthcare Blogs</h1>
-            <div className ='row row-cols-1 row-cols-md-3 g-3'>
-            {
-                blogs.map( blog=> <Blog key= {blog.blogID} blog = {blog} /> )
-            }
+        <div className="blogs">
+            <div className="container mt-5 py-5">
+                <h1>Healthcare Blogs</h1>
+                <div className ='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 py-4'>
+                {
+                    blogs.map( blog=> <Blog key= {blog.blogID} blog = {blog} /> )
+                }
+                </div>
             </div>
         </div>
     );

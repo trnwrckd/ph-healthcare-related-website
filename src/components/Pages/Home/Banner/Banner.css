@@ -1,6 +1,13 @@
 .banner{
     background-color: #F9DF84;
-    height: 80vh;
+    min-height: 80vh;
+}
+.btn-generic{
+    padding: 5px 20px;
+    border: none;
+    background-color: rgb(131, 131, 255);
+    letter-spacing: 1.5px;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 992px) {

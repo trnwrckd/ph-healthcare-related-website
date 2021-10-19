@@ -12,18 +12,20 @@ const Service = (props) => {
     }
 
     return (
-        <div className="d-flex">
-            <div>
-                <img src={image} alt=""  height="200px" width="200px"/>
-            </div>
-            <div className="d-flex flex-column justify-content-center ps-5">
-                <p>{serviceName}</p>
-                <p>{description}</p>
-            <div>
-                <button onClick={ ()=>{redirectToDetails(serviceID)}}>
-                    View Details
-                </button>
-            </div>
+        <div className="col">
+            <div className="h-100 p-3 d-flex align-items-center flex-column flex-lg-row bg-info rounded">
+                <div>
+                    <img src={image} alt=""  height="200px" width="200px"/>
+                </div>
+                <div className="d-flex flex-column justify-content-center ps-4">
+                    <h4>{serviceName}</h4>
+                    <p className="mt-2 mb-4">{description}</p>
+                <div>
+                    <button className="btn-generic bg-light" onClick={ ()=>{redirectToDetails(serviceID)}}>
+                        View Details
+                    </button>
+                </div>
+                </div>
             </div>
         </div>
     );

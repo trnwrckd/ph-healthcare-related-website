@@ -2,6 +2,7 @@ import './Medicine.css';
 import React, { useEffect, useState } from 'react';
 import SingleMed from './SingleMed/SingleMed';
 
+
 const Medicine = () => {
 
     const [medicines, setMedicines] = useState([]);
@@ -13,8 +14,9 @@ const Medicine = () => {
 
 
     return (
-        <div className="container">
-            <div className=" row row-cols-1 row-cols-md-2 g-5">
+        <div className="container py-3">
+            <h1>Essential Medicines</h1>
+            <div className=" row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 py-4">
             {
                 medicines.map(medicine => <SingleMed key={medicine.medID} medicine= {medicine} />)
             }

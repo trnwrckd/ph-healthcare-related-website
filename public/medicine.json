@@ -1,15 +1,19 @@
 [
     {
         "medID": 1, 
-        "medName" : "Osartil 50 mg",
+        "medName" : "Osartil",
+        "amount" : "50 mg",
+        "medType": "Tablet",
         "chemicalName" : "Losartan Potassium",
         "pharma": "Incepta Pharmaceuticals Ltd.",
         "stripPrice" : 70,
         "packPrice" : 500 
     },
     {
-        "medID": 1, 
-        "medName" : "Pulfibro 267 mg",
+        "medID": 2, 
+        "medName" : "Pulfibro",
+        "amount" : "267 mg",
+        "medType": "Tablet",
         "chemicalName" : "Pirfenidone",
         "pharma": "UniMed UniHealth",
         "stripPrice" : 500,
@@ -17,7 +21,9 @@
     },
     {
         "medID": 3, 
-        "medName" : "Mucomist DT 600 mg",
+        "medName" : "Mucomist DT",
+        "amount" : "600 mg",
+        "medType": "Tablet",
         "chemicalName" : "Acetylcysteine",
         "pharma": "Beximco Pharmaceuticals Ltd. ",
         "stripPrice" : 150,
@@ -25,7 +31,9 @@
     },
     {
         "medID": 4, 
-        "medName" : "Zimax 500 mg",
+        "medName" : "Zimax",
+        "amount" : "500 mg",
+        "medType": "Tablet",
         "chemicalName" : "Azithromycin Dihydrate",
         "pharma": "Square Pharmaceuticals Ltd.",
         "stripPrice" : 320,
@@ -33,7 +41,9 @@
     },
     {
         "medID": 5, 
-        "medName" : "Xinc 20 mg",
+        "medName" : "Xinc",
+        "amount" : "20 mg",
+        "medType": "Tablet",
         "chemicalName" : "Zinc Sulfate Monohydrate",
         "pharma": "Eskayef Pharmaceuticals Ltd. ",
         "stripPrice" : 20,
@@ -42,6 +52,8 @@
     {
         "medID": 6, 
         "medName" : "Napa Extend",
+        "amount" : "665 mg",
+        "medType": "Tablet",
         "chemicalName" : "Paracetamol",
         "pharma": "Beximco Pharmaceuticals Ltd. ",
         "stripPrice" : 30,
@@ -49,7 +61,9 @@
     },
     {
         "medID": 7, 
-        "medName" : "Fexo 120 mg",
+        "medName" : "Fexo",
+        "amount" : "120 mg",
+        "medType": "Tablet",
         "chemicalName" : "Fexofenadine Hydrochloride ",
         "pharma": "Square Pharmaceuticals Ltd.",
         "stripPrice" : 120,
@@ -57,7 +71,9 @@
     },
     {
         "medID": 8, 
-        "medName" : "D-Rise 40000 U",
+        "medName" : "D-Rise",
+        "amount" : "40000 Unit",
+        "medType": "Tablet",
         "chemicalName" : "Colecalciferol [Vitamin D3]",
         "pharma": "Beximco Pharmaceuticals Ltd. ",
         "stripPrice" : 350,

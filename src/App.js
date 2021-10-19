@@ -17,39 +17,42 @@ function App() {
     <div className="App">
       <AuthProvider>
         <Router>
-          <div>
             <Header></Header>
-          </div>
-          <div>
             <Switch>
             <Route exact path='/'>
               <Home></Home>            
             </Route>
+
             <Route path='/home'>
               <Home></Home>      
             </Route>
+
             <PrivateRoute path = '/service/:serviceID'>
               <ServiceDetails> </ServiceDetails>
             </PrivateRoute>
+
             <Route path='/login'>
               <Login></Login>
             </Route>
+
             <Route path='/register'>
               <Register></Register>
             </Route>
-            <Route path = '/shop'>
+
+            <PrivateRoute path = '/shop'>
               <Shop></Shop>
-            </Route>
-            <Route path = '/contact'>
+            </PrivateRoute>
+
+            <PrivateRoute path = '/contact'>
               <Contact></Contact>
-            </Route>
+            </PrivateRoute>
+
             <Route path="*">
               <NotFound></NotFound>
             </Route>
           </Switch>
-          </div>
         </Router>
-        <div><Footer></Footer></div>
+        <Footer></Footer>
       </AuthProvider>
     </div>
   );

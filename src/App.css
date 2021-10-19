@@ -1,6 +1,8 @@
 .App {
-  /* min-height: 100%; */
-  /* position: relative;  */
   text-align: center;
   padding-bottom: 100px;
+}
+
+.mt-nav{
+  margin-top: 65px;
 }
