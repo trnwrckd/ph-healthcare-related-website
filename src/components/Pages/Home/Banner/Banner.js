@@ -21,7 +21,7 @@ const Banner = () => {
                     {
                         !user.email &&
                         <button onClick={redirectToRegister} className="btn-generic">
-                            Register Now <i class="fas fa-sign-in-alt ms-1"></i>
+                            Register Now <i className="fas fa-sign-in-alt ms-1"></i>
                         </button>
                     }
                 </div>

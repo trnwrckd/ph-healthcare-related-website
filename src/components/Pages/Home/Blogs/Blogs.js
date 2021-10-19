@@ -12,7 +12,7 @@ const Blogs = () => {
     },[])
 
     return (
-        <div className="blogs">
+        <div className="blogs" data-aos="fade-up" data-aos-duration="1000"> 
             <div className="container mt-5 py-5 overflow-hidden">
                 <h1>Healthcare Blogs</h1>
                 <div className ='row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-3 gy-5 py-4'>
