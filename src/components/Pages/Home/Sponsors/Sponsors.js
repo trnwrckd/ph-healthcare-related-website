@@ -50,11 +50,11 @@ const Sponsors = () => {
         <div className="container-fluid sponsors py-5">
             <div className="container">
                 <h1 > Our Sponsors</h1>
-                <Slider {...slickSettings} className="pt-4">
-                        <div className="d-flex justify-content-center"><img src="./images/sponsors/chevron.png" alt="" height="250px" /></div>
-                        <div className="d-flex justify-content-center"><img src="./images/sponsors/square.png" alt=""  height="250px" /></div>
-                        <div className="d-flex justify-content-center"><img src="./images/sponsors/icddrb.png" alt=""  height="250px" /></div>            
-                        <div className="d-flex justify-content-center"><img src="./images/sponsors/incepta.png" alt="" height="250px" /></div> 
+                <Slider {...slickSettings} className="pt-4 mt-3">
+                        <div className="d-flex justify-content-center"><img src="./images/sponsors/chevron.png" alt="" height="180px" /></div>
+                        <div className="d-flex justify-content-center"><img src="./images/sponsors/square.png" alt=""  height="180px" /></div>
+                        <div className="d-flex justify-content-center"><img src="./images/sponsors/icddrb.png" alt=""  height="180px" /></div>            
+                        <div className="d-flex justify-content-center"><img src="./images/sponsors/incepta.png" alt="" height="180px" /></div> 
                 </Slider>
             </div>
 

@@ -7,11 +7,11 @@ const Blog = (props) => {
     const {title, blogImage, details, date ,author  } = props.blog;
 
     return (
-        <div className="d-flex flex-column justify-content-between">
+        <div className="d-flex flex-column justify-content-between blog-card">
             <div>
                 <img src={blogImage} height="350px" width="350px" alt="" className="rounded"/>
             </div>
-            <div className="px-5 px-lg-2 pt-3">
+            <div className="px-3 px-lg-2 pt-3">
                 <h4>{title}</h4>
                 <div className="d-flex justify-content-around">
                     <p>{date}</p>

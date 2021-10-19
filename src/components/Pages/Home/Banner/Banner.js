@@ -15,7 +15,7 @@ const Banner = () => {
             <div className='container d-flex flex-column flex-lg-row justify-content-center align-items-center'>
                 <div>
                     <h1>We are here for you</h1>
-                    <p className="px-4"> CovidSupport™  is a Chittagong based volunteer organization that's always there for you. <br /> We aspire to tend to your needs in these trying times. <br /> Our services are just a click away.</p>
+                    <p className="px-4 fs-5 mb-3"> CovidSupport™  is a Chittagong based volunteer organization that's always there for you. <br /> We aspire to tend to your needs in these trying times. <br /> Our services are just a click away.</p>
                     <button onClick={redirectToRegister} className= "btn-generic">
                         Register Now
                     </button>

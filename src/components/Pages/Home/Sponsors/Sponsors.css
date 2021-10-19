@@ -1,10 +1,12 @@
 .sponsors{
     background-color: #d9fdc0;
+    background-color: #E4FFD6;
+ 
 }
 
 .col img { 
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
 }
 
 /* overriding slick theme css */

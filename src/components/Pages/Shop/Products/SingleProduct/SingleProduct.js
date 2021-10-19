@@ -5,14 +5,18 @@ const SingleProduct = (props) => {
     const {productName, productImage, originalPrice, discountPrice, sold, stock } = props.product;
     return (
         <div className="col">
-            <div className="bg-info h-100 py-3 d-flex flex-column justify-content-between">
+            <div className="product-card h-100 py-3 d-flex flex-column justify-content-between">
                 <div><img src={productImage} className="img-fluid" alt="" /></div>
                 <div>
                     <h4>{productName}</h4>
-                    <p> Regular Price: <strike>{originalPrice} BDT.</strike></p>
-                    <p>Discount Price: {discountPrice} BDT.</p>
-                    <p>{sold} Already sold</p>
-                    <p>Only {stock} left in stock!</p>
+                    <div className="d-flex justify-content-around w-100 bg-dark  rounded text-light fs-5 align-items-center">
+                        <p className="mb-1"><strike>{originalPrice} BDT.</strike></p>
+                        <p className="mb-1 text-warning fw-bold">{discountPrice} BDT.</p>
+                    </div>
+                    <div className="text-start my-2 px-4 fs-5">
+                        <p className="mb-2">{sold} Already sold</p>
+                        <p className="mb-2">Only {stock} left in stock!</p>
+                    </div>
                     <button className="btn-generic">Buy Now</button>
                 </div>
             </div>

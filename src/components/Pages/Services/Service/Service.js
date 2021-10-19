@@ -13,7 +13,7 @@ const Service = (props) => {
 
     return (
         <div className="col">
-            <div className="h-100 p-3 d-flex align-items-center flex-column flex-lg-row bg-info rounded">
+            <div className="h-100 p-3 d-flex align-items-center flex-column flex-lg-row service-card">
                 <div>
                     <img src={image} alt=""  height="200px" width="200px"/>
                 </div>
