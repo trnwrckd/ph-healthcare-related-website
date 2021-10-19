@@ -19,7 +19,7 @@ const Blog = (props) => {
                 </div>
                 <p>{details}</p>
             </div>
-            <button className = "btn-generic"> Read More</button>
+            <div><button className = "btn-generic"> Read More</button></div>
         </div>
     );
 };

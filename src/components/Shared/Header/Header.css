@@ -5,12 +5,15 @@
     margin-bottom: 65px;
 }
 .logo-text{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-left: 10px;
     font-weight: 500;
 }
 .navbar-collapse {
    padding-left:0;
+}
+.navbar-brand{
+    margin-right: 0px;
 }
 .common{
     margin: 0px 10px;
@@ -19,8 +22,8 @@
     text-decoration: none;
 }
 .active{
-    font-size: 2rem;
-    color: rgb(63, 63, 63);
+    /* font-size: 2rem; */
+    color: rgb(0, 0, 0);
     background-color: #d9fff9;
 }
 a{

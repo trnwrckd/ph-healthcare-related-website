@@ -9,7 +9,7 @@ const Header = () => {
         <div className="custom-nav fixed-top">
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid px-3">
-                    <a className="navbar-brand" href="#">
+                    <a className="navbar-brand" href="https://react-firebase-authentic-c6866.web.app/">
                         <img src="./images/navlogo.webp" alt="" width="30" height="30"></img>
                         <span className="logo-text">CovidSupport</span>
                     </a>

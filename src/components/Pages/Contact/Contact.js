@@ -14,12 +14,12 @@ const Contact = () => {
 					Make a Donation
 				</button>
 			</div>
-			<div className="d-flex flex-column flex-column-reverse flex-lg-row align-items-center">
+			<div className="d-flex flex-column flex-column-reverse flex-lg-row align-items-center mt-3 mt-lg-0">
 				<div><img src="./images/contact.png" alt="" height="500px" width="500px" className="img-fluid"  /></div>
 				<div className="d-flex flex-column align-items-center">
-					<div class="form-floating">
-						<textarea class="form-control text-area" placeholder="Leave a comment here" id="floatingTextarea" style={{height: '300px', width: '300px'}}></textarea>
-						<label for="floatingTextarea">Write your Email..</label>
+					<div className="form-floating">
+						<textarea className="form-control text-area" placeholder="Leave a comment here" id="floatingTextarea" style={{height: '300px', width: '300px'}}></textarea>
+						<label htmlFor="floatingTextarea">Write your Email..</label>
 					</div>
 					<button className="w-100 mt-3 btn-generic">
 						Send

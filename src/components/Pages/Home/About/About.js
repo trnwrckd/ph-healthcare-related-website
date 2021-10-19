@@ -30,7 +30,7 @@ const About = () => {
                         </p>
                         <button className="btn-generic">Sign Up as a Volunteer</button>
                     </div>
-                    <div>
+                    <div className="mt-3 mt-lg-0">
                         <MapContainer center={coordinate} zoom={16} scrollWheelZoom={true}>
                             <TileLayer
                                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

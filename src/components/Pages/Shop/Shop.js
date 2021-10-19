@@ -33,7 +33,7 @@ const Shop = () => {
     return (
         <div className="mt-nav">
             <div className="sub-nav-container pt-5">
-                <ul className = 'sub-nav d-flex justify-content-center'>
+                <ul className = 'sub-nav  d-flex justify-content-center'>
                     <li id="products" onClick={(e)=>{handleClick(e.target.innerText)}}>products</li>
                     <li id="medicine" onClick={(e)=>{handleClick(e.target.innerText)}}>medicine</li>
                 </ul>
