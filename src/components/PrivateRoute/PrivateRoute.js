@@ -1,16 +1,13 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
+import Loader from '../Shared/Loader/Loader';
 
 const PrivateRoute = ({children , ...rest}) => {
     const { user , isLoading } = useAuth();
 
     if (isLoading) {
-        return (
-            <div className="spinner-border text-warning my-5" role="status">
-                <span className="visually-hidden">Loading...</span>
-            </div>
-        );
+        return <Loader></Loader>
     }
 
     return (

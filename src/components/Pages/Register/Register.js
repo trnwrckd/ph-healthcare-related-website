@@ -7,8 +7,9 @@ import { useAuth } from '../../../hooks/useAuth';
 const Register = () => {
     const { handleSubmit, register, formState: { errors } } = useForm();
     const redirectURL = '/';
+
     const history = useHistory();
-    const { googleSignin , emailRegister} = useAuth();
+    const { googleSignin , emailRegister , error} = useAuth();
     
     const onSubmit = (data) => {
         const { name, email, password } = data;
@@ -42,6 +43,7 @@ const Register = () => {
                             <label htmlFor="email">Password</label>
                             {errors.password && <p class="text-danger fw-bold m-0">{errors.password.message}</p>}
                         </div>
+                        {error && <p className="text-danger fw-bold">{error}</p>}
                         <div><button className="btn btn-success">Register</button></div>
                     </form>
                     <div className="mt-3">

@@ -8,7 +8,7 @@ const Login = () => {
     const history = useHistory();
 
     const { handleSubmit, register, formState: { errors } } = useForm();
-    const { googleSignin , emailSignIn} = useAuth();
+    const { googleSignin , emailSignIn , error} = useAuth();
     const location = useLocation();
 
     const redirectURL = location.state?.from || '/';
@@ -35,13 +35,14 @@ const Login = () => {
                             <div className="form-floating mb-2">
                                 <input className="form-control px-5" type="email" placeholder="Email" id="email" {...register("email", { required: "This is required" })} />
                                 <label htmlFor="email">Email</label>
-                                {errors.email && <p>{errors.email.message}</p>}
+                                {errors.email && <p className="text-danger fw-bold m-0">{errors.email.message}</p>}
                             </div>
                             <div className="form-floating mb-2">
                                 <input className="form-control px-5" type="password" placeholder="Password" id="email" {...register("password", { required: "This is required" , minLength:{value:6 , message:"Password must be atleast 6 characters"}})} />
                                 <label htmlFor="email">Password</label>
-                                {errors.password && <p>{errors.password.message}</p>}
+                                {errors.password && <p className="text-danger fw-bold m-0"> {errors.password.message}</p>}
                             </div>
+                            {error && <p className="text-danger fw-bold">{error}</p>}
                             <div><button className="btn btn-success">Login</button></div>
                         </form>
                         <div className="mt-3">
