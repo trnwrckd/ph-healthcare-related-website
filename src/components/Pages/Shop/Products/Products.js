@@ -1,16 +1,19 @@
 import './Products.css';
 import React, { useEffect, useState } from 'react';
 import SingleProduct from './SingleProduct/SingleProduct';
+import Loader from '../../../Shared/Loader/Loader';
 
 const Products = () => {
 
-    const [products, setProducts] = useState();
+    const [products, setProducts] = useState([]);
 
     useEffect(() => {
         fetch('./products.json').then(result => result.json())
             .then(data => setProducts(data));
     } , [])
 
+    if (products.length === 0) return <Loader />
+    
     return (
         <div className="container py-3 overflow-hidden">
             <h1>Top Products</h1>

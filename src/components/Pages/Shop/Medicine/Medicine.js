@@ -1,6 +1,7 @@
 import './Medicine.css';
 import React, { useEffect, useState } from 'react';
 import SingleMed from './SingleMed/SingleMed';
+import Loader from '../../../Shared/Loader/Loader';
 
 
 const Medicine = () => {
@@ -10,7 +11,9 @@ const Medicine = () => {
     useEffect(()=>{
         fetch('./medicine.json').then(result => result.json())
             .then(data =>setMedicines(data));
-    },[])
+    }, [])
+    
+    if(medicines.length === 0) return <Loader/>
 
 
     return (

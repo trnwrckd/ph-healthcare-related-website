@@ -12,12 +12,15 @@ import Register from './components/Pages/Register/Register';
 import Shop from './components/Pages/Shop/Shop';
 import Contact from './components/Pages/Contact/Contact';
 
+import ScrollToTop from './components/Shared/ScrollToTop/ScrollToTop';
+
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <Router>
-            <Header></Header>
+          <ScrollToTop>
+             <Header></Header>
             <Switch>
             <Route exact path='/'>
               <Home></Home>            
@@ -51,6 +54,7 @@ function App() {
               <NotFound></NotFound>
             </Route>
           </Switch>
+           </ScrollToTop>
         </Router>
         <Footer></Footer>
       </AuthProvider>
