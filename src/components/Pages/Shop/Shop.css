@@ -1,5 +1,5 @@
 .sub-nav-container{
-    background-color: rgb(235, 231, 231);
+    background-color: #ebe7e7;
     font-weight: 500;
 }
 
@@ -12,15 +12,17 @@
     display: inline;
     font-size: 1.3rem;
     text-transform: uppercase;
+    border-bottom: 5px solid transparent;
     cursor: pointer;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
     padding: 10px 30px;
-    margin: 0px 5px;
+    /* margin: 0px 5px; */
+
+    transition: .5s all;
 }
 .sub-nav li:hover {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+    border-bottom: 5px solid black;
 }
 .highlight{
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(255, 255, 255);
 }

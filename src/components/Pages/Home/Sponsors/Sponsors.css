@@ -1,7 +1,5 @@
 .sponsors{
-    background-color: #E4FFD6;
-    background-color: #feffd6;
- 
+    background-color: white;
 }
 
 .col img { 
@@ -14,13 +12,15 @@
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    background-color: #d48c93;
+    background-color: #b95a64;
+    transition: .3s all;
 }
 .slick-prev::before, .slick-next::before{
+    transition: .3s all;
     color: white;
 }
 .slick-prev:hover , .slick-next:hover{
-    background-color: #9260d4;
+    background-color: #b94450;
 }
 .slick-prev:hover:before, .slick-next:hover:before{
     color: white;
